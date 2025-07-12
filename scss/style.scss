@@ -1,10 +1,11 @@
 @use "_fonts.scss" as *;
 @use "_vars.scss" as *;
 @use "_reset.scss";
-@use "_mixins.scss";
+@use "_mixins.scss" as *;
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: $mainFont;
   font-weight: 300;
   color: $lightColor;
+  font-size: toRem(16);
 }
