@@ -9,3 +9,9 @@ body {
   color: $lightColor;
   font-size: toRem(16);
 }
+
+[class*="_container"] {
+  max-width: toRem(1330);
+  padding: 0 toRem(15);
+  margin: 0 auto;
+}

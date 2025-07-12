@@ -86,3 +86,9 @@ body {
   color: #3a3a3a;
   font-size: 1rem;
 }
+
+[class*=_container] {
+  max-width: 83.125rem;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+}
