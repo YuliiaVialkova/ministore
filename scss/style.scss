@@ -1,6 +1,7 @@
 @use "_fonts.scss" as *;
 @use "_vars.scss" as *;
 @use "_reset.scss";
+@use "_mixins.scss";
 
 body {
   font-family: "Lato", sans-serif;
