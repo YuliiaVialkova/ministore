@@ -89,6 +89,20 @@ label {
   letter-spacing: 0.1125rem;
   color: #272727;
 }
+.title--light {
+  color: #fff;
+}
+.title--small-margin {
+  margin-bottom: 0.625rem;
+}
+
+.subtitle {
+  line-height: 1.38;
+  letter-spacing: 0.03rem;
+}
+.subtitle--light {
+  color: #fff;
+}
 
 .related-link {
   font-family: "Lato", sans-serif;
@@ -131,6 +145,94 @@ label {
           align-items: center;
 }
 
+/*---------section subscribe-------------*/
+.subscribe__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+  background-color: #272727;
+  padding: 5rem 6.875rem;
+}
+.subscribe__text {
+  max-width: 28.875rem;
+}
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30.875rem;
+  height: 3.3125rem;
+}
+.subscribe__input {
+  padding: 0.625rem 0 0.625rem 1.875rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.08);
+}
+.subscribe__input::-webkit-input-placeholder {
+  color: #3a3a3a;
+  font-family: "Lato", sans-serif;
+  line-height: 1.38;
+  letter-spacing: 0.03rem;
+}
+.subscribe__input::-moz-placeholder {
+  color: #3a3a3a;
+  font-family: "Lato", sans-serif;
+  line-height: 1.38;
+  letter-spacing: 0.03rem;
+}
+.subscribe__input:-ms-input-placeholder {
+  color: #3a3a3a;
+  font-family: "Lato", sans-serif;
+  line-height: 1.38;
+  letter-spacing: 0.03rem;
+}
+.subscribe__input::-ms-input-placeholder {
+  color: #3a3a3a;
+  font-family: "Lato", sans-serif;
+  line-height: 1.38;
+  letter-spacing: 0.03rem;
+}
+.subscribe__input::placeholder {
+  color: #3a3a3a;
+  font-family: "Lato", sans-serif;
+  line-height: 1.38;
+  letter-spacing: 0.03rem;
+}
+.subscribe__button {
+  padding: 1rem 2.5rem;
+}
+
+.button-text {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.48;
+  letter-spacing: 0.0875rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.button-text--light {
+  background-color: #72aec8;
+}
+.button-text--dark {
+  background-color: #272727;
+}
+
+.input {
+  background-color: #fff;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -142,4 +244,18 @@ body {
   max-width: 83.125rem;
   padding: 0 0.9375rem;
   margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
