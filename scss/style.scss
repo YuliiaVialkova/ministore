@@ -2,6 +2,7 @@
 @use "_vars.scss" as *;
 @use "_reset.scss";
 @use "_mixins.scss" as *;
+@use "_components.scss" as *;
 
 body {
   font-family: $mainFont;

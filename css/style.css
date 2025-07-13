@@ -80,6 +80,37 @@ label {
   display: block;
 }
 
+.title {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.1125rem;
+  color: #272727;
+}
+
+.related-link {
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.48;
+  letter-spacing: 0.0875rem;
+  text-transform: uppercase;
+  color: #272727;
+  -webkit-text-decoration: underline solid #e1e1e1 0.1875rem;
+          text-decoration: underline solid #e1e1e1 0.1875rem;
+  text-underline-offset: 0.4375rem;
+  -webkit-transition: color 0.3s, text-decoration-color 0.4s;
+  transition: color 0.3s, text-decoration-color 0.4s;
+}
+@media (any-hover: hover) and (any-pointer: fine) {
+  .related-link:hover {
+    color: #72aec8;
+    text-decoration-color: #72aec8;
+  }
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
