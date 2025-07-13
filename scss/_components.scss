@@ -23,12 +23,24 @@
   color: $darkColor;
   text-decoration: underline solid #e1e1e1 toRem(3);
   text-underline-offset: toRem(7);
-  transition: color 0.3s, text-decoration-color 0.4s;
+  transition: color 0.3s, text-decoration-color 0.2s;
+  white-space: nowrap;
 
+  &:active {
+    color: $hoverColor;
+    text-decoration-color: $hoverColor;
+  }
   @media (any-hover: hover) and (any-pointer: fine) {
     &:hover {
-      color: #72aec8;
-      text-decoration-color: #72aec8;
+      color: $hoverColor;
+      text-decoration-color: $hoverColor;
     }
   }
+}
+.section-top {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: toRem(10);
+  justify-content: space-between;
+  align-items: center;
 }

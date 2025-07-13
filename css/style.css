@@ -101,14 +101,34 @@ label {
   -webkit-text-decoration: underline solid #e1e1e1 0.1875rem;
           text-decoration: underline solid #e1e1e1 0.1875rem;
   text-underline-offset: 0.4375rem;
-  -webkit-transition: color 0.3s, text-decoration-color 0.4s;
-  transition: color 0.3s, text-decoration-color 0.4s;
+  -webkit-transition: color 0.3s, text-decoration-color 0.2s;
+  transition: color 0.3s, text-decoration-color 0.2s;
+  white-space: nowrap;
+}
+.related-link:active {
+  color: #72aec8;
+  text-decoration-color: #72aec8;
 }
 @media (any-hover: hover) and (any-pointer: fine) {
   .related-link:hover {
     color: #72aec8;
     text-decoration-color: #72aec8;
   }
+}
+
+.section-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 0.625rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body {
