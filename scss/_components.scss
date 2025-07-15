@@ -3,6 +3,8 @@
 @use "_reset.scss";
 @use "_mixins.scss" as *;
 
+/*---------title-------------*/
+
 .title {
   font-size: toRem(30);
   font-weight: 400;
@@ -11,7 +13,12 @@
   text-transform: uppercase;
   letter-spacing: toRem(1.8);
   color: $darkColor;
-
+  @media (max-width: toEm(600)) {
+    font-size: toRem(26);
+  }
+  @media (max-width: toEm(475)) {
+    font-size: toRem(24);
+  }
   &--light {
     color: #fff;
   }
@@ -19,6 +26,7 @@
     margin-bottom: toRem(10);
   }
 }
+/*---------subtitle-------------*/
 
 .subtitle {
   line-height: 1.38;
@@ -27,6 +35,7 @@
     color: $white;
   }
 }
+/*---------related link-------------*/
 
 .related-link {
   font-family: $mainFont;
@@ -42,13 +51,13 @@
   white-space: nowrap;
 
   &:active {
-    color: $hoverColor;
-    text-decoration-color: $hoverColor;
+    color: $hoverLinkColor;
+    text-decoration-color: $hoverLinkColor;
   }
   @media (any-hover: hover) and (any-pointer: fine) {
     &:hover {
-      color: $hoverColor;
-      text-decoration-color: $hoverColor;
+      color: $hoverLinkColor;
+      text-decoration-color: $hoverLinkColor;
     }
   }
 }
@@ -64,26 +73,61 @@
 .subscribe {
   &__content {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: toRem(10);
+    gap: toRem(20) toRem(10);
     background-color: $darkColor;
     padding: toRem(80) toRem(110);
+
+    @media (max-width: toEm(1100)) {
+      padding: toRem(60) toRem(90);
+    }
+    @media (max-width: toEm(1025)) {
+      padding: toRem(40) toRem(70);
+    }
+    @media (max-width: toEm(997)) {
+      flex-direction: column;
+    }
+    @media (max-width: toEm(600)) {
+      padding: toRem(30) toRem(50);
+    }
+    @media (max-width: toEm(520)) {
+      padding: toRem(30) toRem(20);
+    }
   }
   &__text {
     max-width: toRem(462);
+    @media (max-width: toEm(997)) {
+      align-self: flex-start;
+    }
+    @media (max-width: toEm(663)) {
+      flex-grow: 1;
+    }
   }
   &__form {
     display: flex;
     width: toRem(494);
-    height: toRem(53);
+
+    flex-shrink: 0;
+    @media (max-width: toEm(997)) {
+      align-self: flex-end;
+    }
+    @media (max-width: toEm(666)) {
+      flex-wrap: wrap;
+      width: 100%;
+      flex-grow: 1;
+    }
   }
   &__input {
+    height: toRem(53);
     padding: toRem(10) 0 toRem(10) toRem(30);
-    flex-grow: 1;
+    min-width: 25ch;
     border: 1px solid #eee;
     box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.08);
-
+    @media (max-width: toEm(470)) {
+      padding: toRem(10) 0 toRem(10) toRem(10);
+    }
     &::placeholder {
       color: $lightColor;
       font-family: $mainFont;
@@ -93,6 +137,23 @@
   }
   &__button {
     padding: toRem(16) toRem(40);
+    height: toRem(53);
+    transition: background-color 0.3s;
+    @media (max-width: toEm(666)) {
+      text-align: center;
+      flex-grow: 1;
+    }
+    @media (max-width: toEm(470)) {
+      padding: toRem(16) toRem(16);
+    }
+    &:active {
+      background-color: #53a4c7;
+    }
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover {
+        background-color: #53a4c7;
+      }
+    }
   }
 }
 
