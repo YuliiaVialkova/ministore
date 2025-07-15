@@ -286,15 +286,8 @@ label {
   line-height: 1.38;
   letter-spacing: 0.03rem;
 }
-.subscribe__button {
-  padding: 1rem 2.5rem;
-  height: 3.3125rem;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-}
 @media (max-width: 41.625em) {
   .subscribe__button {
-    text-align: center;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -305,29 +298,59 @@ label {
     padding: 1rem 1rem;
   }
 }
-.subscribe__button:active {
-  background-color: #53a4c7;
-}
-@media (any-hover: hover) and (any-pointer: fine) {
-  .subscribe__button:hover {
-    background-color: #53a4c7;
-  }
-}
 
 .button-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #fff;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.48;
   letter-spacing: 0.0875rem;
   text-transform: uppercase;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.3125rem;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+.button-text--sizesmall {
+  padding: 1rem 1rem;
+}
+.button-text--sizemedium {
+  padding: 1rem 2.5rem;
+}
+.button-text--sizebig {
+  padding: 1rem 3.125rem;
 }
 .button-text--light {
   background-color: #72aec8;
 }
+.button-text--light:active {
+  background-color: #53a4c7;
+}
+@media (any-hover: hover) and (any-pointer: fine) {
+  .button-text--light:hover {
+    background-color: #53a4c7;
+  }
+}
 .button-text--dark {
   background-color: #272727;
+}
+.button-text--dark:active {
+  background-color: #3a3a3a;
+}
+@media (any-hover: hover) and (any-pointer: fine) {
+  .button-text--dark:hover {
+    background-color: #3a3a3a;
+  }
 }
 
 .input {

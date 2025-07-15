@@ -136,40 +136,60 @@
     }
   }
   &__button {
-    padding: toRem(16) toRem(40);
-    height: toRem(53);
-    transition: background-color 0.3s;
     @media (max-width: toEm(666)) {
-      text-align: center;
       flex-grow: 1;
     }
     @media (max-width: toEm(470)) {
       padding: toRem(16) toRem(16);
     }
-    &:active {
-      background-color: #53a4c7;
-    }
-    @media (any-hover: hover) and (any-pointer: fine) {
-      &:hover {
-        background-color: #53a4c7;
-      }
-    }
   }
 }
 
 .button-text {
+  display: flex;
   color: $white;
   font-size: toRem(14);
   font-weight: 700;
   line-height: 1.48;
   letter-spacing: toRem(1.4);
   text-transform: uppercase;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: toRem(53);
+  transition: background-color 0.3s;
+  -webkit-tap-highlight-color: transparent; // прибирає блакитний ефект на iOS/Android
+  -webkit-touch-callout: none; // забороняє виклик меню на довгий тап
+
+  &--sizesmall {
+    padding: toRem(16) toRem(16);
+  }
+  &--sizemedium {
+    padding: toRem(16) toRem(40);
+  }
+  &--sizebig {
+    padding: toRem(16) toRem(50);
+  }
   &--light {
     background-color: $lightButton;
+    &:active {
+      background-color: $hoverLightButton;
+    }
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover {
+        background-color: $hoverLightButton;
+      }
+    }
   }
   &--dark {
     background-color: $darkButton;
+    &:active {
+      background-color: $hoverDarkButton;
+    }
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover {
+        background-color: $hoverDarkButton;
+      }
+    }
   }
 }
 
