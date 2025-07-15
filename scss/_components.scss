@@ -133,6 +133,10 @@
       font-family: $mainFont;
       line-height: 1.38;
       letter-spacing: toRem(0.48);
+      transition: opacity 0.1s;
+    }
+    &:focus::placeholder {
+      opacity: 0;
     }
   }
   &__button {
