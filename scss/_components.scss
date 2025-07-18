@@ -128,16 +128,6 @@
     @media (max-width: toEm(470)) {
       padding: toRem(10) 0 toRem(10) toRem(10);
     }
-    &::placeholder {
-      color: $lightColor;
-      font-family: $mainFont;
-      line-height: 1.38;
-      letter-spacing: toRem(0.48);
-      transition: opacity 0.1s;
-    }
-    &:focus::placeholder {
-      opacity: 0;
-    }
   }
   &__button {
     @media (max-width: toEm(666)) {
@@ -148,6 +138,7 @@
     }
   }
 }
+/*---------button-text -------------*/
 
 .button-text {
   display: flex;
@@ -196,7 +187,28 @@
     }
   }
 }
+/*---------input -------------*/
 
-.input {
+input {
   background-color: $white;
+  &::placeholder {
+    color: $lightColor;
+    font-family: $mainFont;
+    line-height: 1.38;
+    letter-spacing: toRem(0.48);
+    transition: opacity 0.1s;
+  }
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}
+
+/*---------icon -------------*/
+.icon {
+  width: 14px;
+  height: 14px;
+}
+.icon--caret-down {
+  width: toRem(14);
+  height: toRem(14);
 }

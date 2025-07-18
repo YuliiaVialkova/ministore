@@ -1,0 +1,121 @@
+@use "_fonts.scss" as *;
+@use "_vars.scss" as *;
+@use "_reset.scss";
+@use "_mixins.scss" as *;
+@use "_components.scss";
+
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: auto;
+    color: $darkColor;
+    font-family: $secondaryFont;
+    font-size: toRem(33);
+    font-weight: 400;
+    line-height: 1.45;
+    padding: toRem(12) 0;
+    & > span {
+      color: #72aec8;
+    }
+  }
+
+  &__menu {
+  }
+
+  &__actions {
+    margin-left: toRem(120);
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    font-family: $mainFont;
+    font-size: toRem(14);
+    font-weight: 500;
+    line-height: 1.48;
+    letter-spacing: toRem(1.4);
+    text-transform: uppercase;
+    margin: 0 toRem(18);
+    position: relative;
+    transition: color 0.3s;
+    &:last-child {
+      margin-right: 0;
+    }
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover {
+        cursor: pointer;
+        color: $hoverLinkColor;
+        .submenu {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+        & > .icon {
+          color: $hoverLinkColor;
+        }
+      }
+    }
+  }
+
+  &__link {
+    padding: toRem(13);
+    &--active {
+      color: #72aec8;
+    }
+
+    & > .icon {
+      vertical-align: middle;
+    }
+  }
+}
+.submenu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: toRem(200);
+  padding: 0 toRem(13) toRem(13);
+  pointer-events: none;
+  transition: opacity 0.3s;
+  &__link {
+    color: $darkColor;
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.actions-header {
+  &__link {
+    &:not(:last-child) {
+      margin-right: toRem(19);
+    }
+    & > .icon {
+      width: toRem(18);
+      height: toRem(18);
+    }
+    &--cart {
+      display: inline-flex;
+      align-items: flex-end;
+      & + span {
+        display: inline-block;
+        padding-left: toRem(2);
+        color: $darkColor;
+        font-family: $mainFont;
+        font-size: toRem(12);
+        font-weight: 500;
+        line-height: 1.48;
+        letter-spacing: toRem(1.2);
+      }
+    }
+  }
+}

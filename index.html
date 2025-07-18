@@ -51,12 +51,75 @@
         />
       </symbol>
     </svg>
-    <svg class="icon">
+    <!-- <svg class="icon">
       <use xlink:href="#icon-home"></use>
-    </svg>
+    </svg> -->
 
     <div class="wrapper">
-      <header class="header"></header>
+      <header class="header">
+        <div class="header__container">
+          <a href="#" class="header__logo">MiniStore<span>.</span></a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link">
+                  Pages
+                  <svg class="icon icon--caret-down">
+                    <use xlink:href="#icon-caret-down"></use>
+                  </svg>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">Some link</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">Some link</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">Some link</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Blogs</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions actions-header">
+            <a
+              href="#"
+              class="actions-header__link actions-header__link--search"
+            >
+              <svg class="icon icon--search">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="actions-header__link actions-header__link--login"
+            >
+              <svg class="icon icon--person">
+                <use xlink:href="#icon-person"></use>
+              </svg>
+            </a>
+            <a href="#" class="actions-header__link actions-header__link--cart">
+              <svg class="icon icon--cart">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              <span>(0)</span>
+            </a>
+          </div>
+        </div>
+      </header>
       <main class="page"></main>
       <footer class="footer"></footer>
     </div>
