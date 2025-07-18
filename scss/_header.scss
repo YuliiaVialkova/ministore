@@ -19,7 +19,7 @@
     line-height: 1.45;
     padding: toRem(12) 0;
     & > span {
-      color: #72aec8;
+      color: $lightBlueColor;
     }
   }
 
@@ -64,7 +64,7 @@
   &__link {
     padding: toRem(13);
     &--active {
-      color: #72aec8;
+      color: $hoverLinkColor;
     }
 
     & > .icon {
