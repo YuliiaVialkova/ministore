@@ -1,12 +1,13 @@
 $white: #fff;
 $lightColor: #3a3a3a;
 $darkColor: #272727;
+$lightBlueColor: #72aec8;
 
-$hoverLinkColor: #72aec8;
+$hoverLinkColor: $lightBlueColor;
 $hoverLightButton: #53a4c7;
 $hoverDarkButton: $lightColor;
 
-$lightButton: #72aec8;
+$lightButton: $lightBlueColor;
 $darkButton: $darkColor;
 
 $mainFont: "Lato", sans-serif;
