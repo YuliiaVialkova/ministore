@@ -680,6 +680,97 @@ html.open-menu .header__menu .submenu {
   letter-spacing: 0.075rem;
 }
 
+.footer-bottom {
+  padding: 1.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+@media (max-width: 64em) {
+  .footer-bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0.625rem;
+  }
+}
+.footer-bottom__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.footer-bottom__block > :not(:last-child) {
+  margin-right: 2.875rem;
+}
+.footer-bottom__block > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.625rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (max-width: 64em) {
+  .footer-bottom__block {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0.625rem;
+  }
+  .footer-bottom__block > :not(:last-child) {
+    margin-right: 0;
+  }
+}
+.footer-bottom p {
+  line-height: 1.38;
+  letter-spacing: 0.03rem;
+}
+.footer-bottom__copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  gap: 0.25rem;
+}
+.footer-bottom__copy > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (max-width: 64em) {
+  .footer-bottom__copy {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    gap: 0.625rem;
+  }
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;

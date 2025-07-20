@@ -1,0 +1,70 @@
+@use "_fonts.scss" as *;
+@use "_vars.scss" as *;
+@use "_reset.scss";
+@use "_mixins.scss" as *;
+@use "_components.scss";
+
+.footer {
+  &__container {
+  }
+
+  &__body {
+  }
+
+  &__bottom {
+  }
+}
+.footer-bottom {
+  padding: toRem(20) 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: toRem(20);
+  @media (max-width: toEm(1024)) {
+    justify-content: center;
+    gap: toRem(10);
+  }
+
+  &__block {
+    display: flex;
+    flex-shrink: 0;
+    & > :not(:last-child) {
+      margin-right: toRem(46);
+    }
+    & > * {
+      display: flex;
+      gap: toRem(10);
+      flex-shrink: 0;
+    }
+    @media (max-width: toEm(1024)) {
+      flex-shrink: 1;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: toRem(10);
+      & > :not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+  p {
+    line-height: 1.38;
+    letter-spacing: toRem(0.48);
+  }
+  &__copy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: toRem(4);
+    & > * {
+      display: flex;
+      flex-shrink: 0;
+    }
+    @media (max-width: toEm(1024)) {
+      flex-shrink: 1;
+      gap: toRem(10);
+    }
+  }
+}
