@@ -212,3 +212,52 @@ input {
   width: toRem(14);
   height: toRem(14);
 }
+/*---------burger-menu-------------*/
+
+.burger-menu {
+  @media (min-width: toEm(893)) {
+    display: none;
+  }
+  @media (max-width: toEm(893)) {
+    display: block;
+    width: toRem(35);
+    height: toRem(26);
+    position: relative;
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transition: all 0.5s;
+      position: absolute;
+      width: 100%;
+      height: toRem(2);
+      background-color: $darkColor;
+      left: 0;
+    }
+    span {
+      top: 50%;
+      translate: 0 -50%;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    .open-menu & {
+      span {
+        width: 0;
+      }
+      &::before {
+        top: 50%;
+        translate: 0 -50%;
+        rotate: 45deg;
+      }
+      &::after {
+        bottom: 50%;
+        translate: 0 50%;
+        rotate: -45deg;
+      }
+    }
+  }
+}
