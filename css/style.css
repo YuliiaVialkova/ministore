@@ -763,6 +763,10 @@ html.open-menu .header__menu .submenu {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+.footer-bottom__copy a {
+  font-weight: 400;
+  text-decoration: underline;
+}
 @media (max-width: 64em) {
   .footer-bottom__copy {
     -ms-flex-negative: 1;
