@@ -32,3 +32,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.page {
+  flex-grow: 1;
+}
