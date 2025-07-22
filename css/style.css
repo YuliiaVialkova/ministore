@@ -385,10 +385,6 @@ input:focus::placeholder {
 }
 
 /*---------icon -------------*/
-.icon {
-  color: #272727;
-}
-
 .icon--caret-down {
   width: 0.875rem;
   height: 0.875rem;
@@ -440,6 +436,16 @@ input:focus::placeholder {
     translate: 0 50%;
     rotate: -45deg;
   }
+}
+
+/*---------h3-------------*/
+h3 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 
 .header__container {
