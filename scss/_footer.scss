@@ -4,16 +4,71 @@
 @use "_mixins.scss" as *;
 @use "_components.scss";
 
-.footer {
-  &__container {
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+
+  &__block {
+    line-height: 1.38;
+    letter-spacing: toRem(0.48);
+    > *:first-child {
+      margin-bottom: toRem(10);
+    }
+    &--about {
+      max-width: 26%;
+    }
+    &--contacts {
+      max-width: 18.5%;
+      a {
+        font-weight: 400;
+        text-decoration: underline;
+      }
+      a:not(:last-child) {
+        margin-bottom: toRem(14);
+      }
+    }
   }
 
-  &__body {
+  &__logo {
+    padding: 0;
   }
 
-  &__bottom {
+  &__socials {
+  }
+  h3 {
+    font-family: $secondaryFont;
+    font-size: toRem(20);
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
   }
 }
+
+.footer-menu {
+  &__item {
+    font-size: toRem(14);
+    font-weight: 500;
+    line-height: 1.48;
+    letter-spacing: toRem(1.4);
+    text-transform: uppercase;
+    &:first-child > .footer-menu__link {
+      padding-top: 0;
+    }
+    &:last-child > .footer-menu__link {
+      padding-bottom: 0;
+    }
+  }
+
+  &__link {
+    padding: toRem(4) 0;
+
+    &--active {
+      color: $hoverLinkColor;
+    }
+  }
+}
+
 .footer-bottom {
   padding: toRem(20) 0;
   display: flex;

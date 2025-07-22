@@ -680,6 +680,66 @@ html.open-menu .header__menu .submenu {
   letter-spacing: 0.075rem;
 }
 
+.footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer-body__block {
+  line-height: 1.38;
+  letter-spacing: 0.03rem;
+}
+.footer-body__block > *:first-child {
+  margin-bottom: 0.625rem;
+}
+.footer-body__block--about {
+  max-width: 26%;
+}
+.footer-body__block--contacts {
+  max-width: 18.5%;
+}
+.footer-body__block--contacts a {
+  font-weight: 400;
+  text-decoration: underline;
+}
+.footer-body__block--contacts a:not(:last-child) {
+  margin-bottom: 0.875rem;
+}
+.footer-body__logo {
+  padding: 0;
+}
+.footer-body h3 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.footer-menu__item {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.48;
+  letter-spacing: 0.0875rem;
+  text-transform: uppercase;
+}
+.footer-menu__item:first-child > .footer-menu__link {
+  padding-top: 0;
+}
+.footer-menu__item:last-child > .footer-menu__link {
+  padding-bottom: 0;
+}
+.footer-menu__link {
+  padding: 0.25rem 0;
+}
+.footer-menu__link--active {
+  color: #72aec8;
+}
+
 .footer-bottom {
   padding: 1.25rem 0;
   display: -webkit-box;
@@ -796,8 +856,7 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
