@@ -386,8 +386,7 @@ input:focus::placeholder {
 
 /*---------icon -------------*/
 .icon {
-  width: 14px;
-  height: 14px;
+  color: #272727;
 }
 
 .icon--caret-down {
@@ -711,6 +710,9 @@ html.open-menu .header__menu .submenu {
 .footer-body__logo {
   padding: 0;
 }
+.footer-body__about {
+  margin-bottom: 1.25rem;
+}
 .footer-body h3 {
   font-family: "Jost", sans-serif;
   font-size: 1.25rem;
@@ -718,6 +720,18 @@ html.open-menu .header__menu .submenu {
   line-height: 1.45;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+}
+
+.socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.socials__item:not(:last-child) {
+  margin-right: 1.875rem;
 }
 
 .footer-menu__item {

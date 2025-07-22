@@ -32,8 +32,8 @@
   &__logo {
     padding: 0;
   }
-
-  &__socials {
+  &__about {
+    margin-bottom: toRem(20);
   }
   h3 {
     font-family: $secondaryFont;
@@ -43,6 +43,21 @@
     letter-spacing: 1.2px;
     text-transform: uppercase;
   }
+}
+
+.socials {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: toRem(30);
+  }
+}
+.icon {
+}
+.icon--socials {
 }
 
 .footer-menu {
