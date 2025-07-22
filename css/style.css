@@ -385,9 +385,12 @@ input:focus::placeholder {
 }
 
 /*---------icon -------------*/
-.icon--caret-down {
-  width: 0.875rem;
-  height: 0.875rem;
+.icon--socials {
+  line-height: 1;
+  color: #d7dddf;
+}
+.icon--socials:hover {
+  color: #72aec8;
 }
 
 /*---------burger-menu-------------*/

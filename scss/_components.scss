@@ -204,9 +204,14 @@ input {
 }
 
 /*---------icon -------------*/
-.icon--caret-down {
-  width: toRem(14);
-  height: toRem(14);
+.icon {
+  &--socials {
+    line-height: 1;
+    color: #d7dddf;
+    &:hover {
+      color: $hoverLinkColor;
+    }
+  }
 }
 /*---------burger-menu-------------*/
 
