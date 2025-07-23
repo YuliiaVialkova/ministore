@@ -385,12 +385,15 @@ input:focus::placeholder {
 }
 
 /*---------icon -------------*/
+.icon {
+  color: #272727;
+}
+.icon:hover {
+  color: #72aec8;
+}
 .icon--socials {
   line-height: 1;
   color: #d7dddf;
-}
-.icon--socials:hover {
-  color: #72aec8;
 }
 
 /*---------burger-menu-------------*/

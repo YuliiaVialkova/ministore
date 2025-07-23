@@ -205,12 +205,13 @@ input {
 
 /*---------icon -------------*/
 .icon {
+  color: $darkColor;
+  &:hover {
+    color: $hoverLinkColor;
+  }
   &--socials {
     line-height: 1;
     color: #d7dddf;
-    &:hover {
-      color: $hoverLinkColor;
-    }
   }
 }
 /*---------burger-menu-------------*/
