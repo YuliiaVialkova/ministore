@@ -206,6 +206,7 @@ input {
 /*---------icon -------------*/
 .icon {
   color: $darkColor;
+  transition: color 0.3s;
   &:hover {
     color: $hoverLinkColor;
   }

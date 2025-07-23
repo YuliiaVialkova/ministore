@@ -387,6 +387,8 @@ input:focus::placeholder {
 /*---------icon -------------*/
 .icon {
   color: #272727;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 .icon:hover {
   color: #72aec8;
