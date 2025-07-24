@@ -768,6 +768,11 @@ h3 {
 .footer-menu__link {
   padding: 0.25rem 0;
 }
+@media (any-hover: hover) and (any-pointer: fine) {
+  .footer-menu__link:hover {
+    color: #72aec8;
+  }
+}
 .footer-menu__link--active {
   color: #72aec8;
 }
