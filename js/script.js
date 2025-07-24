@@ -24,35 +24,43 @@ function documentActions(e) {
   if (document.documentElement.classList.contains("open-menu")) {
     return;
   }
+
   //click on menu link
   const menuItem = targetElement.closest(".menu__item");
-  if (!link) return;
+
+  if (!menuItem) return;
 
   const menuLink = menuItem.querySelector(".menu__link");
-  const subMenu = menuLink.nextElementSibling;
+  const subMenu = menuItem.querySelector(".submenu");
 
   const hasSub = subMenu && subMenu.classList.contains("submenu");
 
-  if (hasSub) {
-    //do not click on the link, just open
-    e.preventDefault();
+  if (hasSub && menuLink.contains(targetElement)) {
+    if (window.innerWidth > 893) {
+      e.preventDefault(); // Блокуємо тільки клік по заголовку меню
+    }
     const wasOpen = menuItem.classList.contains("open-submenu");
+
     closeAllSubmenus();
 
     // add class to open submenu
     const nowOpen = !wasOpen;
+
     menuItem.classList.toggle("open-submenu", nowOpen);
 
     //aria-expended
-    link?.setAttribute("aria-expanded", nowOpen ? "true" : "false");
-  } else {
-    closeAllSubmenus();
+    menuLink?.setAttribute("aria-expanded", nowOpen ? "true" : "false");
+
+    return;
   }
-}
-function closeAllSubmenus() {
-  document.querySelectorAll(".menu__item.open-submenu").forEach((openItem) => {
-    openItem.classList.remove("open-submenu");
-    const link = openItem.querySelector(".menu__link");
-    link?.setAttribute("aria-expanded", "false");
-  });
+
+  function closeAllSubmenus() {
+    document
+      .querySelectorAll(".menu__item.open-submenu")
+      .forEach((openItem) => {
+        openItem.classList.remove("open-submenu");
+        const link = openItem.querySelector(".menu__link");
+        link?.setAttribute("aria-expanded", "false");
+      });
+  }
 }

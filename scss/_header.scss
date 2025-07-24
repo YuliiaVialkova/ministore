@@ -94,9 +94,12 @@
       }
     }
     @media (any-hover: none) and (any-pointer: coarse) {
-      &.open-submenu + .submenu {
+      &.open-submenu > .submenu {
         opacity: 1;
         visibility: visible;
+        pointer-events: auto;
+      }
+      &.open-submenu .submenu__link {
         pointer-events: auto;
       }
     }
@@ -148,6 +151,7 @@
   padding: 0 toRem(13) toRem(13);
   pointer-events: none;
   transition: opacity 0.3s;
+
   &__link {
     padding: toRem(4) 0;
     color: $darkColor;

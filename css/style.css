@@ -591,9 +591,12 @@ h3 {
   }
 }
 @media (any-hover: none) and (any-pointer: coarse) {
-  .menu__item.open-submenu + .submenu {
+  .menu__item.open-submenu > .submenu {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
+  }
+  .menu__item.open-submenu .submenu__link {
     pointer-events: auto;
   }
 }
