@@ -576,9 +576,25 @@ h3 {
 .menu__item:last-child {
   margin-right: 0;
 }
-@media (max-width: 58.9375em) {
-  .menu__item {
-    margin: 0 0.625rem;
+@media (any-hover: hover) and (any-pointer: fine) {
+  .menu__item:hover {
+    cursor: pointer;
+    color: #72aec8;
+  }
+  .menu__item:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .menu__item:hover .icon {
+    color: #72aec8;
+  }
+}
+@media (any-hover: none) and (any-pointer: coarse) {
+  .menu__item.open-submenu + .submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 }
 @media (max-width: 55.8125em) {
@@ -606,32 +622,16 @@ h3 {
     margin-bottom: 0;
   }
 }
+@media (max-width: 58.9375em) {
+  .menu__item {
+    margin: 0 0.625rem;
+  }
+}
 .menu__link {
   padding: 0.8125rem;
 }
 .menu__link > .icon {
   vertical-align: middle;
-}
-@media (any-hover: hover) and (any-pointer: fine) {
-  .menu__link:hover {
-    cursor: pointer;
-    color: #72aec8;
-  }
-  .menu__link:hover > .submenu {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  .menu__link:hover > .icon {
-    color: #72aec8;
-  }
-}
-@media (any-hover: none) and (any-pointer: coarse) {
-  .menu__link.open-submenu + .submenu {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
 }
 @media (max-width: 55.8125em) {
   .menu__link {

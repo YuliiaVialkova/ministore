@@ -79,10 +79,28 @@
     &:last-child {
       margin-right: 0;
     }
-
-    @media (max-width: toEm(943)) {
-      margin: 0 toRem(10);
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover {
+        cursor: pointer;
+        color: $hoverLinkColor;
+        & > .submenu {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+        & .icon {
+          color: $hoverLinkColor;
+        }
+      }
     }
+    @media (any-hover: none) and (any-pointer: coarse) {
+      &.open-submenu + .submenu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+    }
+
     @media (max-width: toEm(893)) {
       margin: toRem(10);
       font-size: toRem(20);
@@ -97,6 +115,9 @@
         margin-bottom: 0;
       }
     }
+    @media (max-width: toEm(943)) {
+      margin: 0 toRem(10);
+    }
   }
 
   &__link {
@@ -104,27 +125,7 @@
     & > .icon {
       vertical-align: middle;
     }
-    @media (any-hover: hover) and (any-pointer: fine) {
-      &:hover {
-        cursor: pointer;
-        color: $hoverLinkColor;
-        & > .submenu {
-          opacity: 1;
-          visibility: visible;
-          pointer-events: auto;
-        }
-        & > .icon {
-          color: $hoverLinkColor;
-        }
-      }
-    }
-    @media (any-hover: none) and (any-pointer: coarse) {
-      &.open-submenu + .submenu {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-      }
-    }
+
     @media (max-width: toEm(893)) {
       background-color: $lightBlueColor;
       border-radius: toRem(8);
