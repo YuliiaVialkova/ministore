@@ -396,6 +396,7 @@ input:focus::placeholder {
 .icon--socials {
   line-height: 1;
   color: #d7dddf;
+  vertical-align: middle;
 }
 
 /*---------burger-menu-------------*/
