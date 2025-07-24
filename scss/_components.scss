@@ -274,3 +274,18 @@ h3 {
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
+/*---------logo-------------*/
+
+.logo {
+  color: $darkColor;
+  font-family: $secondaryFont;
+  font-size: toRem(33);
+  font-weight: 400;
+  line-height: 1.45;
+  & > span {
+    color: $lightBlueColor;
+  }
+  @media (max-width: toEm(943)) {
+    font-size: toRem(28);
+  }
+}

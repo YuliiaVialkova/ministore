@@ -456,6 +456,23 @@ h3 {
   text-transform: uppercase;
 }
 
+/*---------logo-------------*/
+.logo {
+  color: #272727;
+  font-family: "Jost", sans-serif;
+  font-size: 2.0625rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+.logo > span {
+  color: #72aec8;
+}
+@media (max-width: 58.9375em) {
+  .logo {
+    font-size: 1.75rem;
+  }
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
