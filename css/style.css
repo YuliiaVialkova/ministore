@@ -474,51 +474,12 @@ h3 {
 }
 .header__logo {
   margin-right: auto;
-  color: #272727;
-  font-family: "Jost", sans-serif;
-  font-size: 2.0625rem;
-  font-weight: 400;
-  line-height: 1.45;
   padding: 0.75rem 0;
-}
-.header__logo > span {
-  color: #72aec8;
 }
 @media (max-width: 68.75em) {
   .header__logo {
     margin-right: 0;
   }
-}
-@media (max-width: 58.9375em) {
-  .header__logo {
-    font-size: 1.75rem;
-  }
-}
-@media (max-width: 55.8125em) {
-  .header__menu {
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #edf1f3;
-    top: 0;
-    right: -100%;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    margin-top: 4.5rem;
-    overflow: auto;
-  }
-}
-html.open-menu .header__menu {
-  right: 0;
-}
-html.open-menu .header__menu .submenu {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  position: relative;
-  width: auto;
-  padding: 0;
 }
 .header__actions {
   display: -webkit-box;
@@ -539,6 +500,32 @@ html.open-menu .header__menu .submenu {
   }
 }
 
+@media (max-width: 55.8125em) {
+  .menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #edf1f3;
+    top: 0;
+    right: -100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: 4.5rem;
+    overflow: auto;
+  }
+  html.open-menu .menu {
+    right: 0;
+  }
+  html.open-menu .menu .submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: relative;
+    width: auto;
+    padding: 0;
+  }
+}
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,7 +534,7 @@ html.open-menu .header__menu .submenu {
       flex-wrap: wrap;
 }
 @media (max-width: 55.8125em) {
-  .header__menu .menu__list {
+  .menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -605,9 +592,6 @@ html.open-menu .header__menu .submenu {
 .menu__link {
   padding: 0.8125rem;
 }
-.menu__link--active {
-  color: #72aec8;
-}
 .menu__link > .icon {
   vertical-align: middle;
 }
@@ -616,7 +600,7 @@ html.open-menu .header__menu .submenu {
     cursor: pointer;
     color: #72aec8;
   }
-  .menu__link:hover + .submenu {
+  .menu__link:hover > .submenu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
