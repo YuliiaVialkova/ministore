@@ -860,6 +860,10 @@ body {
   margin: 0 auto;
 }
 
+[class*="--active"] {
+  color: #72aec8;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

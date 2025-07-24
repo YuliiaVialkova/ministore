@@ -19,6 +19,10 @@ body {
   margin: 0 auto;
 }
 
+[class*="--active"] {
+  color: $hoverLinkColor;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
