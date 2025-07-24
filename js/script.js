@@ -25,31 +25,34 @@ function documentActions(e) {
     return;
   }
   //click on menu link
-  const link = targetElement.closest(".menu__link");
+  const menuItem = targetElement.closest(".menu__item");
   if (!link) return;
 
-  const subMenu = link.nextElementSibling;
+  const menuLink = menuItem.querySelector(".menu__link");
+  const subMenu = menuLink.nextElementSibling;
+
   const hasSub = subMenu && subMenu.classList.contains("submenu");
 
   if (hasSub) {
     //do not click on the link, just open
     e.preventDefault();
-    const wasOpen = link.classList.contains("open-submenu");
+    const wasOpen = menuItem.classList.contains("open-submenu");
     closeAllSubmenus();
 
     // add class to open submenu
     const nowOpen = !wasOpen;
-    link.classList.toggle("open-submenu", nowOpen);
+    menuItem.classList.toggle("open-submenu", nowOpen);
 
     //aria-expended
-    link.setAttribute("aria-expanded", nowOpen ? "true" : "false");
+    link?.setAttribute("aria-expanded", nowOpen ? "true" : "false");
   } else {
     closeAllSubmenus();
   }
 }
 function closeAllSubmenus() {
-  document.querySelectorAll(".menu__link.open-submenu").forEach((openLink) => {
-    openLink.classList.remove("open-submenu");
-    openLink.setAttribute("aria-expanded", "false");
+  document.querySelectorAll(".menu__item.open-submenu").forEach((openItem) => {
+    openItem.classList.remove("open-submenu");
+    const link = openItem.querySelector(".menu__link");
+    link?.setAttribute("aria-expanded", "false");
   });
 }
