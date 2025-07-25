@@ -3,7 +3,20 @@
 @use "_reset.scss";
 @use "_mixins.scss" as *;
 @use "_components.scss";
-
+.footer {
+  &__body {
+    margin-bottom: toRem(80);
+    @media (max-width: toEm(1024)) {
+      margin-bottom: toRem(60);
+    }
+    @media (max-width: toEm(768)) {
+      margin-bottom: toRem(40);
+    }
+    @media (max-width: toEm(600)) {
+      margin-bottom: toRem(20);
+    }
+  }
+}
 .footer-body {
   display: flex;
   justify-content: space-between;
@@ -53,10 +66,6 @@
       @media (max-width: toEm(600)) {
         padding: toRem(10);
       }
-    }
-    &--mainlinks {
-    }
-    &--info {
     }
     &--contacts {
       flex-basis: 18.5%;

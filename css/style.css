@@ -698,6 +698,25 @@ h3 {
   letter-spacing: 0.075rem;
 }
 
+.footer__body {
+  margin-bottom: 5rem;
+}
+@media (max-width: 64em) {
+  .footer__body {
+    margin-bottom: 3.75rem;
+  }
+}
+@media (max-width: 48em) {
+  .footer__body {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .footer__body {
+    margin-bottom: 1.25rem;
+  }
+}
+
 .footer-body {
   display: -webkit-box;
   display: -ms-flexbox;
