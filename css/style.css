@@ -486,16 +486,6 @@ h2 {
 }
 
 /*---------insta-shop-------------*/
-.insta-shop__title {
-  font-family: "Jost", sans-serif;
-  font-size: 1.875rem;
-  font-weight: 400;
-  line-height: 1.14;
-  letter-spacing: 0.1125rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 1.875rem;
-}
 .insta-shop__list {
   display: -webkit-box;
   display: -ms-flexbox;
