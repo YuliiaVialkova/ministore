@@ -447,7 +447,7 @@ input:focus::placeholder {
   }
 }
 
-/*---------h3, h2-------------*/
+/*---------h3-------------*/
 h3 {
   font-family: "Jost", sans-serif;
   font-size: 1.25rem;
@@ -455,17 +455,6 @@ h3 {
   line-height: 1.45;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-}
-
-h2 {
-  font-family: "Jost", sans-serif;
-  font-size: 1.875rem;
-  font-weight: 400;
-  line-height: 1.14;
-  letter-spacing: 0.1125rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 1.875rem;
 }
 
 /*---------logo-------------*/

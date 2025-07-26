@@ -265,7 +265,7 @@ input {
     }
   }
 }
-/*---------h3, h2-------------*/
+/*---------h3-------------*/
 
 h3 {
   font-family: $secondaryFont;
@@ -275,16 +275,7 @@ h3 {
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
-h2 {
-  font-family: $secondaryFont;
-  font-size: toRem(30);
-  font-weight: 400;
-  line-height: 1.14;
-  letter-spacing: toRem(1.8);
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: toRem(30);
-}
+
 /*---------logo-------------*/
 
 .logo {
