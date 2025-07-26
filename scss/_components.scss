@@ -290,3 +290,41 @@ h3 {
     font-size: toRem(28);
   }
 }
+/*---------insta-shop-------------*/
+.insta-shop {
+  &__container {
+  }
+
+  &__title {
+    font-family: $secondaryFont;
+    font-size: toRem(30);
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: toRem(1.8);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: toRem(30);
+  }
+
+  &__list {
+    display: flex;
+    gap: toRem(20);
+    align-items: center;
+    justify-content: center;
+    @media (max-width: toEm(1024)) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    height: toRem(244);
+  }
+
+  &__link {
+  }
+  &__img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+  }
+}
