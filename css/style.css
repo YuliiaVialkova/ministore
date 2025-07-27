@@ -109,6 +109,11 @@ label {
 .title--big-margin {
   margin-bottom: 1.875rem;
 }
+@media (max-width: 25.75em) {
+  .title--big-margin {
+    margin-bottom: 1.25rem;
+  }
+}
 
 /*---------subtitle-------------*/
 .subtitle {
