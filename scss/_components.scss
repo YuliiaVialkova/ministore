@@ -296,6 +296,9 @@ h3 {
 }
 /*---------insta-shop-------------*/
 .insta-shop {
+  &__title {
+    text-align: center;
+  }
   &__list {
     display: flex;
     gap: toRem(20);

@@ -478,6 +478,9 @@ h3 {
 }
 
 /*---------insta-shop-------------*/
+.insta-shop__title {
+  text-align: center;
+}
 .insta-shop__list {
   display: -webkit-box;
   display: -ms-flexbox;
