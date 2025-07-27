@@ -497,13 +497,47 @@ h3 {
   }
 }
 .insta-shop__item {
-  height: 15.25rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.insta-shop__link {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.insta-shop__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../images/insta-shop/social.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.875rem 2rem;
+  pointer-events: none;
+  opacity: 0;
+}
+@media (any-hover: hover) and (any-pointer: fine) {
+  .insta-shop__link:hover .insta-shop__img {
+    background-color: #000;
+    opacity: 0.4;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .insta-shop__link:hover::after {
+    opacity: 1;
+  }
 }
 .insta-shop__img {
-  aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
   width: 100%;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
 }
 
 .header__container {

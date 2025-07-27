@@ -307,12 +307,41 @@ h3 {
   }
 
   &__item {
-    height: toRem(244);
-  }
-
-  &__img {
     aspect-ratio: 1/1;
-    object-fit: cover;
+    overflow: hidden;
+  }
+  &__link {
+    position: relative;
+    display: block;
+    height: 100%;
     width: 100%;
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url(../images/insta-shop/social.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: toRem(30) toRem(32);
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover .insta-shop__img {
+        background-color: #000;
+        opacity: 0.4;
+        transform: scale(1.1);
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+  &__img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.8s ease;
   }
 }
