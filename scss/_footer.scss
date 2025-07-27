@@ -159,6 +159,10 @@
   justify-content: space-between;
   align-items: center;
   gap: toRem(20);
+  img {
+    width: auto;
+    height: toRem(24);
+  }
   @media (max-width: toEm(1024)) {
     justify-content: center;
     gap: toRem(10);
@@ -167,6 +171,7 @@
   &__block {
     display: flex;
     flex-shrink: 0;
+    flex-wrap: wrap;
     & > :not(:last-child) {
       margin-right: toRem(46);
     }
@@ -188,7 +193,9 @@
   p {
     line-height: 1.38;
     letter-spacing: toRem(0.48);
+    white-space: nowrap;
   }
+
   &__copy {
     display: flex;
     flex-wrap: wrap;

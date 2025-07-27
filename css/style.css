@@ -1005,6 +1005,10 @@ h3 {
           align-items: center;
   gap: 1.25rem;
 }
+.footer-bottom img {
+  width: auto;
+  height: 1.5rem;
+}
 @media (max-width: 64em) {
   .footer-bottom {
     -webkit-box-pack: center;
@@ -1019,6 +1023,8 @@ h3 {
   display: flex;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .footer-bottom__block > :not(:last-child) {
   margin-right: 2.875rem;
@@ -1049,6 +1055,7 @@ h3 {
 .footer-bottom p {
   line-height: 1.38;
   letter-spacing: 0.03rem;
+  white-space: nowrap;
 }
 .footer-bottom__copy {
   display: -webkit-box;
