@@ -1134,3 +1134,6 @@ body {
 .page > section:not(:last-child) {
   margin-bottom: 7.5rem;
 }
+.page > section:last-child {
+  margin-bottom: 6.25rem;
+}
