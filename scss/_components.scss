@@ -304,14 +304,16 @@ h3 {
     gap: toRem(20);
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     @media (max-width: toEm(1024)) {
-      flex-wrap: wrap;
     }
   }
 
   &__item {
     aspect-ratio: 1/1;
     overflow: hidden;
+    width: toRem(244);
+    height: toRem(244);
   }
   &__link {
     position: relative;
