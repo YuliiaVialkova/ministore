@@ -213,7 +213,9 @@ input {
   &:hover {
     color: $hoverLinkColor;
   }
-  &--socials {
+  &--socials,
+  &--ship,
+  &--payment {
     line-height: 1;
     color: #d7dddf;
     vertical-align: middle;

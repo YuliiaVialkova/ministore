@@ -396,7 +396,7 @@ input:focus::placeholder {
 .icon:hover {
   color: #72aec8;
 }
-.icon--socials {
+.icon--socials, .icon--ship, .icon--payment {
   line-height: 1;
   color: #d7dddf;
   vertical-align: middle;
