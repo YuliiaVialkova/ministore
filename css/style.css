@@ -1141,6 +1141,36 @@ body {
 .page > section:not(:last-child) {
   margin-bottom: 7.5rem;
 }
+@media (max-width: 64em) {
+  .page > section:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 48em) {
+  .page > section:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 25.75em) {
+  .page > section:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+}
 .page > section:last-child {
   margin-bottom: 6.25rem;
+}
+@media (max-width: 64em) {
+  .page > section:last-child {
+    margin-bottom: 3.75rem;
+  }
+}
+@media (max-width: 48em) {
+  .page > section:last-child {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 25.75em) {
+  .page > section:last-child {
+    margin-bottom: 1.25rem;
+  }
 }

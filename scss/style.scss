@@ -45,8 +45,26 @@ body {
   flex-grow: 1;
   > section:not(:last-child) {
     margin-bottom: toRem(120);
+    @media (max-width: toEm(1024)) {
+      margin-bottom: toRem(80);
+    }
+    @media (max-width: toEm(768)) {
+      margin-bottom: toRem(40);
+    }
+    @media (max-width: toEm(412)) {
+      margin-bottom: toRem(20);
+    }
   }
   > section:last-child {
     margin-bottom: toRem(100);
+    @media (max-width: toEm(1024)) {
+      margin-bottom: toRem(60);
+    }
+    @media (max-width: toEm(768)) {
+      margin-bottom: toRem(40);
+    }
+    @media (max-width: toEm(412)) {
+      margin-bottom: toRem(20);
+    }
   }
 }
