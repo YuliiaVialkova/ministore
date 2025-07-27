@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MiniStore About</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="#" class="header__logo logo">MiniStore<span>.</span></a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link" aria-haspopup="true">
+                  Pages
+                  <svg class="icon icon--caret-down" width="14" height="14">
+                    <use href="images/sprite.svg#icon-caret-down"></use>
+                  </svg>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">Some link</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">Some link</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">Some link</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Blogs</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions actions-header">
+            <a
+              href="#"
+              class="actions-header__link actions-header__link--search"
+            >
+              <svg class="icon icon-search" width="18" height="18">
+                <use href="images/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="actions-header__link actions-header__link--login"
+            >
+              <svg class="icon icon-person" width="18" height="18">
+                <use href="images/sprite.svg#icon-person"></use>
+              </svg>
+            </a>
+            <a href="#" class="actions-header__link actions-header__link--cart">
+              <svg class="icon icon-cart" width="18" height="18">
+                <use href="images/sprite.svg#icon-cart"></use>
+              </svg>
+              <span>(0)</span>
+            </a>
+            <button type="button" class="burger-menu">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="subscribe">
+          <div class="subscribe__container">
+            <div class="subscribe__content">
+              <div class="subscribe__text">
+                <h2 class="title title--light title--small-margin">
+                  Subscribe Us now
+                </h2>
+                <div class="subtitle subtitle--light">
+                  Get latest news, updates and deals directly mailed to your
+                  inbox.
+                </div>
+              </div>
+              <div class="subscribe__form">
+                <label class="visually-hidden subscribe__label" for="user-email"
+                  >Email adress</label
+                >
+                <input
+                  class="subscribe__input input"
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="Your email address here"
+                  required
+                />
+                <button
+                  class="subscribe__button button-text button-text--light button-text--sizemedium"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="insta-shop">
+          <div class="insta-shop__container">
+            <h2 class="insta-shop__title title title--big-margin">
+              Shop our insta
+            </h2>
+            <ul class="insta-shop__list">
+              <li class="insta-shop__item">
+                <a href="https://www.instagram.com/" class="insta-shop__link">
+                  <img
+                    class="insta-shop__img"
+                    src="images/insta-shop/insta-shop01.png"
+                    alt="instagram MiniStore"
+                  />
+                </a>
+              </li>
+              <li class="insta-shop__item">
+                <a href="#" class="insta-shop__link">
+                  <img
+                    class="insta-shop__img"
+                    src="images/insta-shop/insta-shop02.png"
+                    alt="instagram MiniStore"
+                  />
+                </a>
+              </li>
+              <li class="insta-shop__item">
+                <a href="#" class="insta-shop__link">
+                  <img
+                    class="insta-shop__img"
+                    src="images/insta-shop/insta-shop03.png"
+                    alt="instagram MiniStore"
+                  />
+                </a>
+              </li>
+              <li class="insta-shop__item">
+                <a href="#" class="insta-shop__link">
+                  <img
+                    class="insta-shop__img"
+                    src="images/insta-shop/insta-shop04.png"
+                    alt="instagram MiniStore"
+                  />
+                </a>
+              </li>
+              <li class="insta-shop__item">
+                <a href="#" class="insta-shop__link">
+                  <img
+                    class="insta-shop__img"
+                    src="images/insta-shop/insta-shop05.png"
+                    alt="instagram MiniStore"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body footer-body">
+            <div class="footer-body__block footer-body__block--about">
+              <a href="#" class="logo footer-body__logo"
+                >MiniStore<span>.</span></a
+              >
+              <p class="footer-body__about">
+                Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit.
+                Gravida massa volutpat aenean odio erat nullam fringilla.
+              </p>
+              <div class="footer-body__socials socials">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a href="https://www.facebook.com/">
+                      <svg class="icon icon--socials" width="12" height="21">
+                        <use
+                          href="images/sprite.svg#icon-socials-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="https://www.instagram.com/">
+                      <svg class="icon icon--socials" width="18" height="19">
+                        <use
+                          href="images/sprite.svg#icon-socials-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="https://www.twitter.com/">
+                      <svg class="icon icon--socials" width="18" height="15">
+                        <use
+                          href="images/sprite.svg#icon-socials-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="https://www.linkedin.com/">
+                      <svg class="icon icon--socials" width="18" height="19">
+                        <use
+                          href="images/sprite.svg#icon-socials-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="https://www.youtube.com/">
+                      <svg class="icon icon--socials" width="22" height="15">
+                        <use
+                          href="images/sprite.svg#icon-socials-youtube"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-body__block footer-body__block--mainlinks">
+              <h3>Quick links</h3>
+              <ul class="footer-menu">
+                <li class="footer-menu__item">
+                  <a
+                    class="footer-menu__link footer-menu__link--active"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">About </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Shop</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Blogs</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-body__block footer-body__block--info">
+              <h3>Help & info</h3>
+              <ul class="footer-menu">
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Track Your Order </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Returns policies</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Shipping + Delivery</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Contact Us</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Faqs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-body__block footer-body__block--contacts">
+              <h3>Contact us</h3>
+              <p>Do you have any queries or suggestions?</p>
+              <a href="mailto:yourinfo@gmail.com">yourinfo@gmail.com</a>
+              <p>If you need support? Just give us a call.</p>
+              <a href="tel:+55 111 222 333 44">+55 111 222 333 44</a>
+            </div>
+          </div>
+          <div class="footer__bottom footer-bottom">
+            <div class="footer-bottom__block">
+              <div class="footer-bottom__ship">
+                <p>We ship with:</p>
+                <svg class="icon icon--ship" width="60" height="24">
+                  <use href="images/sprite.svg#icon-ship-dhl"></use>
+                </svg>
+                <svg class="icon icon--ship" width="38" height="24">
+                  <use href="images/sprite.svg#icon-ship-post"></use>
+                </svg>
+              </div>
+              <div class="footer-bottom__payment">
+                <p>Payment options:</p>
+                <svg class="icon icon--payment" width="30" height="24">
+                  <use href="images/sprite.svg#icon-payment-visa"></use>
+                </svg>
+                <svg class="icon icon--payment" width="30" height="24">
+                  <use href="images/sprite.svg#icon-payment-mastercard"></use>
+                </svg>
+                <svg class="icon icon--payment" width="30" height="24">
+                  <use href="images/sprite.svg#icon-payment-paypal"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="footer-bottom__copy">
+              <p>© Copyright 2023 MiniStore.</p>
+              <p>Design by <a href="#">TemplatesJungle</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
