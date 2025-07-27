@@ -355,3 +355,47 @@ h3 {
     transition: transform 0.8s ease;
   }
 }
+/*---------product-card-------------*/
+
+.product-card {
+  display: inline-block;
+  &__img-wrp {
+    overflow: hidden;
+    width: toRem(310);
+    height: toRem(418);
+    margin-bottom: toRem(10);
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 310/418;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: toRem(20);
+    align-items: center;
+  }
+
+  &__caption {
+    font-size: toRem(20);
+    font-weight: 400;
+    font-family: $secondaryFont;
+    line-height: 1.45;
+    text-transform: uppercase;
+    letter-spacing: toRem(1.2);
+    color: $darkColor;
+  }
+
+  &__price {
+    font-size: toRem(20);
+    font-weight: 400;
+    font-family: $mainFont;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: toRem(0.6);
+    color: $lightBlueColor;
+  }
+}
