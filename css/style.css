@@ -164,6 +164,12 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1.875rem;
+}
+@media (max-width: 25.75em) {
+  .section-top {
+    margin-bottom: 1.25rem;
+  }
 }
 
 /*---------section subscribe-------------*/
@@ -590,6 +596,20 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.0375rem;
   color: #72aec8;
+}
+
+/*---------products section-------------*/
+.products__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__container {
