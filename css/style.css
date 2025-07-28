@@ -556,7 +556,7 @@ h3 {
 .product-card {
   display: inline-block;
 }
-.product-card__img-wrp {
+.product-card__img-link {
   overflow: hidden;
   width: 19.375rem;
   height: 26.125rem;
@@ -587,6 +587,11 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.075rem;
   color: #272727;
+}
+@media (any-hover: hover) and (any-pointer: fine) {
+  .product-card__caption:hover {
+    color: #72aec8;
+  }
 }
 .product-card__price {
   font-size: 1.25rem;

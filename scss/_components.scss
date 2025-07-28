@@ -363,7 +363,7 @@ h3 {
 
 .product-card {
   display: inline-block;
-  &__img-wrp {
+  &__img-link {
     overflow: hidden;
     width: toRem(310);
     height: toRem(418);
@@ -391,6 +391,11 @@ h3 {
     text-transform: uppercase;
     letter-spacing: toRem(1.2);
     color: $darkColor;
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover {
+        color: $hoverLinkColor;
+      }
+    }
   }
 
   &__price {
