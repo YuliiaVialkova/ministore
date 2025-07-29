@@ -439,8 +439,26 @@ h3 {
     gap: toRem(20);
     align-items: center;
     justify-content: center;
+    margin-bottom: toRem(50);
     @media (max-width: toEm(1024)) {
       flex-wrap: wrap;
     }
+  }
+}
+/*---------dot -------------*/
+.dots {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: toRem(20);
+}
+.dot {
+  display: inline-block;
+  width: toRem(14);
+  height: toRem(14);
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  &--active {
+    background-color: #4a4a4a;
   }
 }
