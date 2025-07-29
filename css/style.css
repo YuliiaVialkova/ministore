@@ -309,7 +309,12 @@ label {
 }
 .button-text--icon {
   font-weight: 500;
+  gap: 0.5rem;
+  height: 2.3125rem;
   padding: 0.5rem 1.875rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 .button-text--sizesmall {
   padding: 1rem 1rem;
@@ -586,7 +591,10 @@ h3 {
   bottom: 2.1875rem;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  opacity: 1;
+  opacity: 0;
+}
+.product-card__button .icon-cart {
+  color: #fff;
 }
 .product-card__bottom {
   display: -webkit-box;

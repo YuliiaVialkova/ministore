@@ -167,7 +167,10 @@
   -webkit-touch-callout: none; // забороняє виклик меню на довгий тап
   &--icon {
     font-weight: 500;
+    gap: toRem(8);
+    height: toRem(37);
     padding: toRem(8) toRem(30);
+    align-items: start;
   }
   &--sizesmall {
     padding: toRem(16) toRem(16);
@@ -391,7 +394,10 @@ h3 {
     transform: translateX(-50%);
     bottom: toRem(35);
     transition: opacity 0.3s;
-    opacity: 1;
+    opacity: 0;
+    & .icon-cart {
+      color: $white;
+    }
   }
   &__bottom {
     display: flex;
