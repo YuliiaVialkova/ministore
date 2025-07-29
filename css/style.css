@@ -1309,3 +1309,19 @@ body {
     margin-bottom: 1.25rem;
   }
 }
+
+.benefits__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.4375rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.benefits__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 23%;
+  gap: 0.875rem;
+}

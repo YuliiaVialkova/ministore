@@ -68,3 +68,19 @@ body {
     }
   }
 }
+
+.benefits {
+  &__container {
+    display: flex;
+    gap: toRem(55);
+    flex-wrap: wrap;
+  }
+  &__group {
+    display: flex;
+    max-width: 23%;
+    gap: toRem(14);
+  }
+
+  &__content {
+  }
+}
