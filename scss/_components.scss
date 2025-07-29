@@ -161,10 +161,14 @@
   justify-content: center;
   align-items: center;
   height: toRem(53);
+  white-space: nowrap;
   transition: background-color 0.3s;
   -webkit-tap-highlight-color: transparent; // прибирає блакитний ефект на iOS/Android
   -webkit-touch-callout: none; // забороняє виклик меню на довгий тап
-
+  &--icon {
+    font-weight: 500;
+    padding: toRem(8) toRem(30);
+  }
   &--sizesmall {
     padding: toRem(16) toRem(16);
   }
@@ -363,18 +367,32 @@ h3 {
 
 .product-card {
   max-width: toRem(310);
+
   &__img-link {
+    position: relative;
     overflow: hidden;
     width: 100%;
     aspect-ratio: 310/418;
     margin-bottom: toRem(10);
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover .product-card__button {
+        opacity: 1;
+      }
+    }
   }
 
   &__img {
     width: 100%;
     height: 100%;
   }
-
+  &__button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: toRem(35);
+    transition: opacity 0.3s;
+    opacity: 1;
+  }
   &__bottom {
     display: flex;
     justify-content: space-between;
