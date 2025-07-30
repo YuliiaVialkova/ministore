@@ -18,6 +18,11 @@ body {
   padding: 0 toRem(15);
   margin: 0 auto;
 }
+[class*="_big-container"] {
+  max-width: toRem(1950);
+  padding: 0 toRem(15);
+  margin: 0 auto;
+}
 
 [class*="--active"] {
   color: $hoverLinkColor;
