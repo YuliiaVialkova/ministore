@@ -731,6 +731,28 @@ h4 {
   background-color: #4a4a4a;
 }
 
+/*---------block -------------*/
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.25rem;
+}
+.block__img-wrp {
+  overflow: hidden;
+  aspect-ratio: 529/612;
+}
+.block__img {
+  width: 100%;
+  height: 100%;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
