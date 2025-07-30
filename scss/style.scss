@@ -71,16 +71,32 @@ body {
 
 .benefits {
   &__container {
-    display: flex;
-    gap: toRem(55);
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(toRem(283), 1fr));
+    row-gap: toRem(20);
+    column-gap: toRem(55);
+    justify-items: center;
   }
   &__group {
     display: flex;
-    max-width: 23%;
+    flex-wrap: nowrap;
     gap: toRem(14);
+    > .icon {
+      flex-shrink: 0;
+      width: toRem(28);
+      height: toRem(28);
+      color: $lightBlueColor;
+      fill: transparent;
+    }
   }
 
   &__content {
+    h3 {
+      margin-bottom: toRem(4);
+    }
+    p {
+      line-height: 1.38;
+      letter-spacing: toRem(0.48);
+    }
   }
 }
