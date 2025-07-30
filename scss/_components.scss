@@ -291,7 +291,7 @@ h3 {
   font-size: toRem(20);
   font-weight: 400;
   line-height: 1.45;
-  letter-spacing: 1.2px;
+  letter-spacing: toRem(1.2);
   text-transform: uppercase;
 }
 
