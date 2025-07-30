@@ -102,3 +102,18 @@ body {
     }
   }
 }
+
+.promo {
+  &__container {
+    > .block {
+      gap: toRem(65);
+    }
+    .block__img-wrp {
+      height: toRem(612);
+      width: toRem(529);
+    }
+    .block__content {
+      max-width: 52%;
+    }
+  }
+}

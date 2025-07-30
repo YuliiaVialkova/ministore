@@ -1420,3 +1420,14 @@ body {
   line-height: 1.38;
   letter-spacing: 0.03rem;
 }
+
+.promo__container > .block {
+  gap: 4.0625rem;
+}
+.promo__container .block__img-wrp {
+  height: 38.25rem;
+  width: 33.0625rem;
+}
+.promo__container .block__content {
+  max-width: 52%;
+}
