@@ -325,14 +325,14 @@ label {
 .button-text--sizebig {
   padding: 1rem 3.125rem;
 }
-.button-text--light {
+.subscribe .button-text {
   background-color: #72aec8;
 }
-.button-text--light:active {
+.subscribe .button-text:active {
   background-color: #53a4c7;
 }
 @media (any-hover: hover) and (any-pointer: fine) {
-  .button-text--light:hover {
+  .subscribe .button-text:hover {
     background-color: #53a4c7;
   }
 }
@@ -742,11 +742,9 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 1.25rem;
 }
 .block__img-wrp {
   overflow: hidden;
-  aspect-ratio: 529/612;
 }
 .block__img {
   width: 100%;

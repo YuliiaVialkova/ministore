@@ -181,7 +181,7 @@
   &--sizebig {
     padding: toRem(16) toRem(50);
   }
-  &--light {
+  .subscribe & {
     background-color: $lightButton;
     &:active {
       background-color: $hoverLightButton;
@@ -512,13 +512,9 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 toRem(20);
-  &__content {
-  }
 
   &__img-wrp {
     overflow: hidden;
-    aspect-ratio: 529/612;
   }
 
   &__img {
