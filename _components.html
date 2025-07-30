@@ -117,11 +117,21 @@
 
     <div class="product-card">
       <a href="#" class="product-card__img-link">
-        <img
-          src="images/products/iphone10.png"
-          alt=""
-          class="product-card__img"
-        />
+        <picture>
+          <source
+            srcset="images/products/mobile-products/iphone10.avif"
+            type="image/avif"
+          />
+          <source
+            srcset="images/products/mobile-products/iphone10.webp"
+            type="image/webp"
+          />
+          <img
+            src="images/products/mobile-products/iphone10.jpg"
+            alt="An iPhone rests beside a pair of white earbuds on a flat surface, showcasing a modern audio setup."
+            class="product-card__img"
+          />
+        </picture>
       </a>
       <div class="product-card__bottom">
         <a href="#" class="product-card__caption">Iphone 10</a>
