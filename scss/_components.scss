@@ -369,7 +369,13 @@ h3 {
 /*---------product-card-------------*/
 
 .product-card {
-  max-width: toRem(310);
+  max-width: calc(100% - (55px * 3) / 4);
+  @media (max-width: toEm(1024)) {
+    max-width: calc(100% - (55px * 2) / 3);
+  }
+  @media (max-width: toEm(768)) {
+    max-width: calc(100% - 55px / 2);
+  }
 
   &__img-link {
     position: relative;
@@ -436,12 +442,35 @@ h3 {
 .products {
   &__body {
     display: flex;
+    flex-wrap: nowrap;
     gap: toRem(20);
     align-items: center;
     justify-content: center;
     margin-bottom: toRem(50);
+    :nth-child(n + 5) {
+      display: none;
+    }
     @media (max-width: toEm(1024)) {
+      margin-bottom: toRem(40);
+      :nth-child(n + 4) {
+        display: none;
+      }
+    }
+    @media (max-width: toEm(768)) {
       flex-wrap: wrap;
+      margin-bottom: toRem(30);
+      :nth-child(n + 4) {
+        display: block;
+      }
+      :nth-child(n + 5) {
+        display: none;
+      }
+    }
+
+    @media (max-width: toEm(600)) {
+      :nth-child(n + 4) {
+        display: none;
+      }
     }
   }
 }
