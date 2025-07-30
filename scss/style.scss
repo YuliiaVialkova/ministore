@@ -51,9 +51,6 @@ body {
     @media (max-width: toEm(768)) {
       margin-bottom: toRem(40);
     }
-    @media (max-width: toEm(412)) {
-      margin-bottom: toRem(20);
-    }
   }
   > section:last-child {
     margin-bottom: toRem(100);

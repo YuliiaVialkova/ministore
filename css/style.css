@@ -1321,11 +1321,6 @@ body {
     margin-bottom: 2.5rem;
   }
 }
-@media (max-width: 25.75em) {
-  .page > section:not(:last-child) {
-    margin-bottom: 1.25rem;
-  }
-}
 .page > section:last-child {
   margin-bottom: 6.25rem;
 }
