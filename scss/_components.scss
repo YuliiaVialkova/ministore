@@ -294,7 +294,21 @@ h3 {
   letter-spacing: toRem(1.2);
   text-transform: uppercase;
 }
-
+/*---------h4-------------*/
+h4 {
+  font-family: $secondaryFont;
+  color: $darkColor;
+  font-size: toRem(83);
+  line-height: 1.14;
+  letter-spacing: toRem(1.66);
+  text-transform: uppercase;
+  @media (max-width: toEm(1024)) {
+    font-size: toRem(60);
+  }
+  @media (max-width: toEm(768)) {
+    font-size: toRem(40);
+  }
+}
 /*---------logo-------------*/
 
 .logo {
