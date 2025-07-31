@@ -104,16 +104,36 @@ body {
 }
 
 .promo {
+  background-color: #edf1f3;
   &__container {
     > .block {
-      gap: toRem(65);
+      justify-content: space-between;
+      padding: 0 toRem(20);
+      @media (max-width: toEm(600)) {
+        padding: 0;
+      }
     }
     .block__img-wrp {
-      height: toRem(612);
-      width: toRem(529);
+      width: 42%;
+      flex-shrink: 0;
+      aspect-ratio: 529/612;
+      @media (max-width: toEm(600)) {
+      }
     }
     .block__content {
       max-width: 52%;
+    }
+    h4 {
+      margin-bottom: toRem(40);
+      @media (max-width: toEm(768)) {
+        margin-bottom: toRem(30);
+      }
+      @media (max-width: toEm(600)) {
+        margin-bottom: toRem(20);
+      }
+      @media (max-width: toEm(412)) {
+        margin-bottom: toRem(10);
+      }
     }
   }
 }

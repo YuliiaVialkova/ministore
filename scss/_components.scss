@@ -180,6 +180,15 @@
   }
   &--sizebig {
     padding: toRem(16) toRem(50);
+    @media (max-width: toEm(600)) {
+      padding: toRem(10) toRem(30);
+    }
+    @media (max-width: toEm(412)) {
+      padding: toRem(10) toRem(20);
+    }
+    @media (max-width: toEm(360)) {
+      padding: toRem(5) toRem(15);
+    }
   }
   .subscribe & {
     background-color: $lightButton;
@@ -302,11 +311,23 @@ h4 {
   line-height: 1.14;
   letter-spacing: toRem(1.66);
   text-transform: uppercase;
+  @media (max-width: toEm(1280)) {
+    font-size: toRem(70);
+  }
   @media (max-width: toEm(1024)) {
     font-size: toRem(60);
   }
+  @media (max-width: toEm(900)) {
+    font-size: toRem(50);
+  }
   @media (max-width: toEm(768)) {
     font-size: toRem(40);
+  }
+  @media (max-width: toEm(600)) {
+    font-size: toRem(30);
+  }
+  @media (max-width: toEm(412)) {
+    font-size: toRem(20);
   }
 }
 /*---------logo-------------*/
@@ -520,5 +541,6 @@ h4 {
   &__img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 }
