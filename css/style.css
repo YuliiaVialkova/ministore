@@ -437,6 +437,9 @@ input:focus::placeholder {
   color: #d7dddf;
   vertical-align: middle;
 }
+.icon.icon--ship {
+  fill: transparent;
+}
 
 /*---------burger-menu-------------*/
 @media (min-width: 55.8125em) {
