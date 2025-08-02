@@ -246,6 +246,20 @@ input {
   &.icon--ship {
     fill: transparent;
   }
+  &--arrow {
+    height: clamp(40px, 10vw, 129px);
+    width: auto;
+    aspect-ratio: 67 / 129;
+    display: block;
+    color: #d7dddf;
+    fill: transparent;
+  }
+  &.icon--arrow-active {
+    color: $lightBlueColor;
+  }
+  &--arrow-prev {
+    transform: rotate(180deg);
+  }
 }
 /*---------burger-menu-------------*/
 
@@ -310,28 +324,10 @@ h3 {
 h4 {
   font-family: $secondaryFont;
   color: $darkColor;
-  font-size: toRem(83);
+  font-size: clamp(toRem(20), 6vw, toRem(83));
   line-height: 1.14;
   letter-spacing: toRem(1.66);
   text-transform: uppercase;
-  @media (max-width: toEm(1280)) {
-    font-size: toRem(70);
-  }
-  @media (max-width: toEm(1024)) {
-    font-size: toRem(60);
-  }
-  @media (max-width: toEm(900)) {
-    font-size: toRem(50);
-  }
-  @media (max-width: toEm(768)) {
-    font-size: toRem(40);
-  }
-  @media (max-width: toEm(600)) {
-    font-size: toRem(30);
-  }
-  @media (max-width: toEm(412)) {
-    font-size: toRem(20);
-  }
 }
 /*---------logo-------------*/
 

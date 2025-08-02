@@ -440,6 +440,22 @@ input:focus::placeholder {
 .icon.icon--ship {
   fill: transparent;
 }
+.icon--arrow {
+  height: clamp(40px, 10vw, 129px);
+  width: auto;
+  aspect-ratio: 67/129;
+  display: block;
+  color: #d7dddf;
+  fill: transparent;
+}
+.icon.icon--arrow-active {
+  color: #72aec8;
+}
+.icon--arrow-prev {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 
 /*---------burger-menu-------------*/
 @media (min-width: 55.8125em) {
@@ -503,40 +519,10 @@ h3 {
 h4 {
   font-family: "Jost", sans-serif;
   color: #272727;
-  font-size: 5.1875rem;
+  font-size: clamp(1.25rem, 6vw, 5.1875rem);
   line-height: 1.14;
   letter-spacing: 0.10375rem;
   text-transform: uppercase;
-}
-@media (max-width: 80em) {
-  h4 {
-    font-size: 4.375rem;
-  }
-}
-@media (max-width: 64em) {
-  h4 {
-    font-size: 3.75rem;
-  }
-}
-@media (max-width: 56.25em) {
-  h4 {
-    font-size: 3.125rem;
-  }
-}
-@media (max-width: 48em) {
-  h4 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 37.5em) {
-  h4 {
-    font-size: 1.875rem;
-  }
-}
-@media (max-width: 25.75em) {
-  h4 {
-    font-size: 1.25rem;
-  }
 }
 
 /*---------logo-------------*/
@@ -1462,41 +1448,100 @@ body {
 .promo {
   background-color: #edf1f3;
 }
-.promo__container > .block {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.promo__big-container .slider__container {
+  position: relative;
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.promo__big-container .slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4.0625rem;
   padding: 0 1.25rem;
 }
-@media (max-width: 37.5em) {
-  .promo__container > .block {
-    padding: 0;
+@media (max-width: 64em) {
+  .promo__big-container .slider__item {
+    gap: 1.25rem;
   }
 }
-.promo__container .block__img-wrp {
-  width: 42%;
+@media (max-width: 37.5em) {
+  .promo__big-container .slider__item {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.promo__big-container .slider__img-wrp {
+  overflow: hidden;
+  width: 37%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   aspect-ratio: 529/612;
 }
-.promo__container .block__content {
-  max-width: 52%;
-}
-.promo__container h4 {
-  margin-bottom: 2.5rem;
-}
-@media (max-width: 48em) {
-  .promo__container h4 {
-    margin-bottom: 1.875rem;
+@media (max-width: 37.5em) {
+  .promo__big-container .slider__img-wrp {
+    max-width: 80%;
   }
+}
+.promo__big-container .slider__content {
+  max-width: 46%;
 }
 @media (max-width: 37.5em) {
-  .promo__container h4 {
-    margin-bottom: 1.25rem;
+  .promo__big-container .slider__content {
+    padding: 0;
+    max-width: 80%;
+    text-align: center;
+  }
+  .promo__big-container .slider__content .button-text {
+    display: inline-block;
+    margin: 0 auto;
   }
 }
-@media (max-width: 25.75em) {
-  .promo__container h4 {
-    margin-bottom: 0.625rem;
+.promo__big-container .slider__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.promo__big-container h4 {
+  margin-bottom: clamp(0.625rem, 3vw, 2.5rem);
+}
+.promo__big-container .arrow--prev,
+.promo__big-container .arrow--next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.promo__big-container .arrow--prev {
+  left: -10.5rem;
+}
+@media (max-width: 112.5em) {
+  .promo__big-container .arrow--prev {
+    left: -4.375rem;
+  }
+}
+@media (max-width: 106.25em) {
+  .promo__big-container .arrow--prev {
+    left: -0.5rem;
+  }
+}
+.promo__big-container .arrow--next {
+  right: -10.5rem;
+}
+@media (max-width: 112.5em) {
+  .promo__big-container .arrow--next {
+    right: -0.5rem;
   }
 }

@@ -83,34 +83,81 @@
       </header>
       <main class="page">
         <section class="promo">
-          <div class="promo__container">
-            <div class="block">
-              <div class="block__content">
-                <h4>Your Products are great.</h4>
-                <button
-                  type="button"
-                  class="button-text button-text--dark button-text--sizebig"
-                >
-                  Shop Product
-                </button>
-              </div>
-              <div class="block__img-wrp">
-                <picture>
-                  <source srcset="images/promo/01.avif" type="image/avif" />
-                  <source srcset="images/promo/01.webp" type="image/webp" />
-                  <img
-                    class="block__img"
-                    src="images/promo/01.jpg"
-                    alt="An Apple Watch displaying a black screen with a vibrant fire design, showcasing a unique and artistic aesthetic."
-                    class="product-card__img"
-                  />
-                </picture>
+          <div class="promo__big-container">
+            <h2 class="visually-hidden">Promo</h2>
+            <div class="slider">
+              <div class="slider__container">
+                <div class="slider__list">
+                  <div class="slider__item">
+                    <div class="slider__content">
+                      <h4>Your Products are great.</h4>
+                      <button
+                        type="button"
+                        class="button-text button-text--dark button-text--sizebig"
+                      >
+                        Shop Product
+                      </button>
+                    </div>
+                    <div class="slider__img-wrp">
+                      <picture>
+                        <source
+                          srcset="images/promo/01.avif"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="images/promo/01.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          class="slider__img"
+                          src="images/promo/01.jpg"
+                          alt="An Apple Watch displaying a black screen with a vibrant fire design, showcasing a unique and artistic aesthetic."
+                          class="product-card__img"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+
+                  <button type="button" class="arrow arrow--prev">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="67"
+                      height="129"
+                      viewBox="0 0 67 129"
+                      fill="none"
+                      class="icon icon--arrow icon--arrow-prev"
+                    >
+                      <path
+                        d="M2 127L64 64L2 2"
+                        stroke="#72AEC8"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </button>
+                  <button type="button" class="arrow arrow--next">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon--arrow icon--arrow-next icon--arrow-active"
+                      width="67"
+                      height="129"
+                      viewBox="0 0 67 129"
+                      fill="none"
+                    >
+                      <path
+                        d="M2 127L64 64L2 2"
+                        stroke="#72AEC8"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section class="benefits">
           <div class="benefits__container">
+            <h2 class="visually-hidden">Benefits</h2>
             <div class="benefits__group">
               <svg class="icon icon--delivery" width="28" height="28">
                 <use href="images/sprite.svg#icon-delivery"></use>

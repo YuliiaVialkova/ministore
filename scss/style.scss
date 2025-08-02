@@ -105,34 +105,78 @@ body {
 
 .promo {
   background-color: #edf1f3;
-  &__container {
-    > .block {
-      justify-content: space-between;
+  &__big-container {
+    .slider__container {
+      position: relative;
+      max-width: 1470px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .slider__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: toRem(65);
       padding: 0 toRem(20);
+      @media (max-width: toEm(1024)) {
+        gap: toRem(20);
+      }
       @media (max-width: toEm(600)) {
         padding: 0;
+        flex-direction: column-reverse;
       }
     }
-    .block__img-wrp {
-      width: 42%;
+    .slider__img-wrp {
+      overflow: hidden;
+      width: 37%;
       flex-shrink: 0;
       aspect-ratio: 529/612;
       @media (max-width: toEm(600)) {
+        max-width: 80%;
       }
     }
-    .block__content {
-      max-width: 52%;
+    .slider__content {
+      max-width: 46%;
+
+      @media (max-width: toEm(600)) {
+        padding: 0;
+        max-width: 80%;
+        text-align: center;
+        & .button-text {
+          display: inline-block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .slider__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     h4 {
-      margin-bottom: toRem(40);
-      @media (max-width: toEm(768)) {
-        margin-bottom: toRem(30);
+      margin-bottom: clamp(toRem(10), 3vw, toRem(40));
+    }
+    .arrow--prev,
+    .arrow--next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .arrow--prev {
+      left: toRem(-168);
+      @media (max-width: toEm(1800)) {
+        left: toRem(-70);
       }
-      @media (max-width: toEm(600)) {
-        margin-bottom: toRem(20);
+      @media (max-width: toEm(1700)) {
+        left: toRem(-8);
       }
-      @media (max-width: toEm(412)) {
-        margin-bottom: toRem(10);
+    }
+    .arrow--next {
+      right: toRem(-168);
+      @media (max-width: toEm(1800)) {
+        right: toRem(-8);
+      }
+      @media (max-width: toEm(1700)) {
       }
     }
   }
